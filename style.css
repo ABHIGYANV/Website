@@ -10,6 +10,7 @@ body {
     color: #E0E0E0;
 }
 
+/* Header and Footer Styles */
 header, footer {
     text-align: center;
     padding: 20px;
@@ -24,6 +25,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Landing Page Specific Styles */
 section h2 {
     margin: 20px 0;
     color: #E91E63;
@@ -70,8 +72,64 @@ section h2 {
     text-decoration: none;
 }
 
+/* Blog Page Specific Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.blog-post h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #BB86FC;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #E0E0E0;
+}
+
+.blog-post p:first-child {
+    font-size: 0.9rem;
+    color: #E91E63;
+}
+
+/* Blog Links */
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #E91E63;
+}
+
+footer p a {
+    color: #E91E63;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
 footer {
     padding: 15px;
     margin-top: 30px;
     opacity: 0;
+}
+
+/* Animation Initial States */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 0.5s ease;
 }
